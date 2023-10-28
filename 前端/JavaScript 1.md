@@ -10,7 +10,7 @@ JavaScript 1.0 很成功，在 Netscape Navigator 3 中发布了 1.1 版本。�
 
 1997 年，JavaScript 1.1 作为提案被提交给欧洲计算机制造商协会（Ecma）。第 39 技术委员会（TC39）承担了“标准化一门通用、跨平台、厂商中立的脚本语言的语法和语义”的任务。TC39 委员会由来自网景、Sun、微软、Borland、Nombas 和其他对这门脚本语言有兴趣的工程师组成。他们花了数月时间打造出 ECMA-262，也就是 ECMAScript（发音“ek-ma-script”）这个新的脚本语言标准。1998 年，国际标准化组织（ISO）和国际电工委员会（IEC）也将 ECMAScript 采纳为标准（ISO/ IEC-16262）。此后，各家浏览器均以 ECMAScript 作为自己 JavaScript 实现的依据，虽然具体实现各有不同。
 
-![img](E:\HelloWorld\学习资料\md\assets\1680530475780-bba031ae-c0f1-4101-aa27-387c85815a7a.png)
+![img](../assets/1680530475780-bba031ae-c0f1-4101-aa27-387c85815a7a-169847637231114.png)
 
 ### ECMAScript
 
@@ -73,9 +73,9 @@ BOM 主要针对浏览器窗口和子窗口（frame），不过人们通常会�
 </body>
 ```
 
-<script>元素有下列 8 个属性：
+`<script>`元素有下列 8 个属性：
 
-- **async**：表示应该立即开始下载脚本，但不能阻止其他页面动作，只对外部脚本文件有效。 
+**async**：表示应该立即开始下载脚本，但不能阻止其他页面动作，只对外部脚本文件有效。 
 
 - - async 脚本不保证按照它们出现的次序执行。
   - 目的是告诉浏览器，不必等脚本下载和执行完后再加载页面，同样也不必等到该异步脚本下载和执行后再加载其他脚本。因此，异步脚本不应该在加载期间修改 DOM。
@@ -563,7 +563,7 @@ ECMAScript 中的所有数值都以 IEEE 75464 位格式存储，但位操作并
 
 - - 补码 = 反码 + 1
   - 反码 = 原码取反
-  - ![img](E:\HelloWorld\学习资料\md\assets\1681132339298-622c81b0-5de4-446c-ac2b-0a2d7f92aa7c.png)
+  - ![img](../assets/1681132339298-622c81b0-5de4-446c-ac2b-0a2d7f92aa7c-169847637231216.png)
   - `let num = -18; console.log(num.toString(2)); // "**-10010**" `
 
 
@@ -584,7 +584,7 @@ console.log(num2); // -26  ========> (-num1 - 1)
 
 **运算优先级：**
 
-![img](E:\HelloWorld\学习资料\md\assets\1609666735886-b2ee9336-5de5-4223-8d91-81b03ac6c64f.png)
+![img](../assets/1609666735886-b2ee9336-5de5-4223-8d91-81b03ac6c64f-169847637231218.png)
 
 # **函数**
 
@@ -1095,7 +1095,7 @@ delete user?.name; // 如果 user 存在，则删除 user.name
 // 标识符和它们的标识符之间不会有冲突，因为 symbol 总是不同的，即使它们有相同的名字。如下图
 ```
 
-![img](E:\HelloWorld\学习资料\md\assets\1661874700694-e29d545b-e194-4797-afe0-b025c11ae31d.png)
+![img](../assets/1661874700694-e29d545b-e194-4797-afe0-b025c11ae31d-169847637231320.png)
 
 ```javascript
 let id = Symbol("id");
